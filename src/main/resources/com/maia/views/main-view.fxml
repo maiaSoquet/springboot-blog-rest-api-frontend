@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="00.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.maia.controllers.MainController">
+    <Label fx:id="welcomeText" />
+    <Button onAction="#onHelloButtonClick" text="Get all posts/refresh" />
+    <TableView fx:id="postTable" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="97.0" text="post id" />
+            <TableColumn fx:id="titleColumn" prefWidth="102.0" text="post title" />
+            <TableColumn fx:id="descriptionColumn" prefWidth="97.0" text="post description" />
+            <TableColumn fx:id="contentColumn" prefWidth="102.0" text="post content" />
+            <TableColumn fx:id="commentsColumn" prefWidth="102.0" text="post comments" />
+            <TableColumn fx:id="categoryIdColumn" prefWidth="102.0" text="post category id" />
+        </columns>
+    </TableView>
+</VBox>
