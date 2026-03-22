@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.maia.controllers.MenuController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <MenuBar>
+        <menus>
+            <Menu mnemonicParsing="false" text="HTTP">
+                <items>
+                    <MenuItem mnemonicParsing="false" onAction="#openLoginScreen" text="LOGIN" />
+                    <MenuItem mnemonicParsing="false" onAction="#openPostScreen" text="POST" />
+                    <MenuItem mnemonicParsing="false" onAction="#openGetByIdScreen" text="Get by ID" />
+                    <MenuItem mnemonicParsing="false" onAction="#openGetAllScreen" text="Get All" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+
+
+</AnchorPane>

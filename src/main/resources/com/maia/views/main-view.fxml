@@ -13,6 +13,7 @@
 <?import javafx.scene.control.TableColumn?>
 
 <VBox alignment="CENTER" prefHeight="600.0" prefWidth="00.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.maia.controllers.MainController">
+    <fx:include source="menu.fxml" />
     <Label fx:id="welcomeText" />
     <Button onAction="#onHelloButtonClick" text="Get all posts/refresh" />
     <TableView fx:id="postTable" prefHeight="200.0" prefWidth="200.0">

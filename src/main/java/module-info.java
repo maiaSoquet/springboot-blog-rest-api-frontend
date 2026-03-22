@@ -8,7 +8,7 @@ module springboot.blog.rest.api {
     requires com.fasterxml.jackson.databind;
     requires com.fasterxml.jackson.core;
     requires javafx.base;
-
+    requires spring.web;
 
 
     opens com.maia to javafx.graphics, javafx.fxml;
